@@ -2,7 +2,7 @@
     --blue-highlight:dodgerblue;
     --page-content-h2:dimgrey;
     --blue-highlight-transparent: rgba(30, 143, 255, 0.438);
-
+    --blue-highlight-transparent-light: rgba(30,143,255,0.75);
 }
 
 nav {
@@ -99,6 +99,11 @@ nav {
     font-size:larger;
     border-left:solid 5px var(--page-content-h2);
     padding-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration:none;
+
+
 
 }
 .banner{
@@ -119,4 +124,56 @@ nav {
     font-family:Arial, Helvetica, sans-serif;
     font-size:xx-large;
     border-radius:20px;
+}
+.content-image{
+    width:600px;
+    margin:15px;
+    height:300px;
+}
+.portfolio-item p{
+    display:none;
+}
+.portfolio-item::hover p{
+    display:block;
+}
+#dpssite{
+    background-image:url(../images/dpswebscreen.PNG);
+    overflow:hidden;
+    width:600px;
+    margin:15px;
+    height:300px;
+}
+#dpssite span{
+    display:none;
+}
+#dpssite:hover span{
+    padding:50px;
+    font-size:larger;
+    font-weight:bold;
+    color:white;
+    height:100%;
+    width:100%;
+    background:var(--blue-highlight-transparent-light);
+
+    display:block;
+}
+#portfoliosite{
+    background-image:url(../images/portfolioscreen.png);
+    overflow:hidden;
+    width:600px;
+    margin:15px;
+    height:300px;
+}
+#portfoliosite span {
+    display:none;
+}
+#portfoliosite:hover span{
+    padding:50px;
+    font-size:larger;
+    font-weight:bold;
+    color:white;
+    height:100%;
+    width:100%;
+    background:var(--blue-highlight-transparent-light);
+    display:block;
 }
