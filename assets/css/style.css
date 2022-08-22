@@ -1,6 +1,8 @@
 :root {
     --blue-highlight:dodgerblue;
     --page-content-h2:dimgrey;
+    --blue-highlight-transparent: rgba(30, 143, 255, 0.438);
+
 }
 
 nav {
@@ -44,6 +46,7 @@ nav {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration:none;
     font-size:x-large;
+    border-bottom: solid 3px var(--blue-highlight);
 }
 
 .nav-link-container a:hover{
@@ -84,8 +87,31 @@ nav {
 }
 
 .page-content .right-content{
-    margin-top:10vh;
-    height:90vh;
+    position:absolute;
+    top:10vh;
+    margin-top:35vh;
+    height:fit-content;
     width:70vw;
+    left:22vw;
+    font-family:Arial, Helvetica, sans-serif;
 
+}
+.banner{
+    background-image:url("../images/banner.png");
+    height: 25vh;
+    width:100vw;
+    position:relative;
+    top:10vh;
+}
+.banner h2 {
+    background-color:var(--blue-highlight-transparent);
+    color:white;
+    width:fit-content;
+    padding:5px 10px;
+    position:absolute;
+    right:6vw;
+    bottom:6vh;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:xx-large;
+    border-radius:20px;
 }
