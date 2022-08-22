@@ -1,5 +1,6 @@
 :root {
     --blue-highlight:dodgerblue;
+    --page-content-h2:dimgrey;
 }
 
 nav {
@@ -9,12 +10,11 @@ nav {
     position:absolute;
     left:0;
     top:0;
-    height:100px;
+    height:10vh;
     
 }
 .nav-title{
     border-radius:0 0 15px 0;
-    justify-self:flext-start;
     background-color:var(--blue-highlight);
     height:65%;
     padding-inline:20px;
@@ -43,7 +43,7 @@ nav {
     color:var(--blue-highlight);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-decoration:none;
-    font-size:larger;
+    font-size:x-large;
 }
 
 .nav-link-container a:hover{
@@ -56,4 +56,36 @@ nav {
     background-color:darkblue;
     border-radius:15px;
     color:white;
+}
+
+.page-content{
+    display:flex;
+    flex-direction:column;
+    width:100vw;
+    flex: 1;
+}
+.page-content-item{
+    margin:10vh 0;
+}
+.page-content .left-label{
+    margin-top:10vh;
+    height:90vh;
+    width:20vw;
+    text-align:right;
+
+}
+.page-content .left-label h2{
+    font-size:xx-large;
+    color:var(--page-content-h2);
+    text-decoration:underline;
+    border-right:solid 5px var(--page-content-h2);
+    padding-right:20px;
+    padding-bottom:40px;
+}
+
+.page-content .right-content{
+    margin-top:10vh;
+    height:90vh;
+    width:70vw;
+
 }
