@@ -15,6 +15,38 @@ nav {
     height:10vh;
     
 }
+@media screen and (max-width:800px){
+    nav{
+        flex-direction:column;
+        height:25vh;
+
+    }
+    footer {
+        margin-top:10vh;
+    position:relative;
+    bottom:0;
+    background-color: var(--blue-highlight-transparent-light);
+    width:100%;
+    height:10vh;
+    text-align:center;
+    padding-top:20px;
+    font-size:xx-large;
+    color:white;
+    }
+}
+    
+footer {
+    margin-top:10vh;
+    position:relative;
+    bottom:0;
+    background-color: var(--blue-highlight-transparent-light);
+    width:100%;
+    height:10vh;
+    text-align:center;
+    padding-top:20px;
+    font-size:xx-large;
+    color:white;
+}
 .nav-title{
     border-radius:0 0 15px 0;
     background-color:var(--blue-highlight);
@@ -60,6 +92,19 @@ nav {
     border-radius:15px;
     color:white;
 }
+@media screen and (max-width:800px){
+    .nav-title{
+        height:8vh;
+        text-align:center;
+    }
+    .nav-link-container{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+        right:25vw;
+        margin-top:6vh;
+    }
+}
 
 .page-content{
     margin-top:10vh;
@@ -102,10 +147,29 @@ nav {
     display: flex;
     flex-wrap: wrap;
     text-decoration:none;
-
-
-
 }
+
+@media screen and (max-width:800px){
+    .page-content{
+        margin-top:26vh;
+        text-align:center;
+    }
+    .page-content-item{
+        width:100%;
+        margin-left:0;
+        flex-direction:column;
+        align-items:center;
+    }
+    .page-content .right-content{
+        padding-bottom:30px;
+        border-left:0;
+        width:85vw;
+    }
+
+    
+}
+
+
 .banner{
     background-image:url("../images/banner.png");
     height: 25vh;
@@ -125,6 +189,12 @@ nav {
     font-size:xx-large;
     border-radius:20px;
 }
+@media screen and (max-width:800px){
+    .banner{
+        display:none;
+    }    
+}
+
 .content-image{
     width:600px;
     margin:15px;
@@ -176,4 +246,34 @@ nav {
     width:100%;
     background:var(--blue-highlight-transparent-light);
     display:block;
+}
+@media screen and (max-width:800px){
+    #dpssite{
+        width:75vw;
+        background-position:center;
+        height:25vh;
+    }
+    #portfoliosite{
+        width:75vw;
+        background-position:center;
+        height:25vh;
+    }
+}
+.contact-links{
+    display:flex;
+    flex-wrap:wrap;
+    flex:1 0;
+    padding-inline:5vw;
+    font-weight:bold;
+    font-size:larger;
+    margin-top:5vh;
+    margin-bottom:5vh;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--blue-highlight);
+}
+@media screen and (max-width:800px){
+    .contact-links{
+        margin:1vh 1vh;
+    }
 }
