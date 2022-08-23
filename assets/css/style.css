@@ -47,6 +47,7 @@ footer {
     font-size:xx-large;
     color:white;
 }
+
 .nav-title{
     border-radius:0 0 15px 0;
     background-color:var(--blue-highlight);
@@ -177,6 +178,10 @@ footer {
     position:relative;
     top:10vh;
 }
+.banner img{
+    margin-left:5vw;
+    max-width:200px
+}
 .banner h2 {
     background-color:var(--blue-highlight-transparent);
     color:white;
@@ -206,6 +211,21 @@ footer {
 .portfolio-item::hover p{
     display:block;
 }
+.work-title{
+    z-index:100;
+    padding:10px;
+    padding-left:15px;
+    left:0;
+    background-color:aqua;
+    text-decoration:none;
+    width:fit-content;
+    font-size:larger;
+    border-radius:0 0 15px 0;
+}
+.work-title i{
+    text-decoration:none;
+    font-size:medium;
+}
 #dpssite{
     background-image:url(../images/dpswebscreen.PNG);
     overflow:hidden;
@@ -230,7 +250,7 @@ footer {
 #portfoliosite{
     background-image:url(../images/portfolioscreen.png);
     overflow:hidden;
-    width:600px;
+    width:400px;
     margin:15px;
     height:300px;
 }
