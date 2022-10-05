@@ -281,6 +281,28 @@ footer {
         height:25vh;
     }
 }
+#starsalign{
+    background-image:url(../images/starsalign.PNG);
+    background-size:100% auto;
+    overflow:hidden;
+    width:600px;
+    margin:15px;
+    height:300px;
+}
+#starsalign span{
+    display:none;
+}
+#starsalign:hover span{
+    padding:50px;
+    font-size:larger;
+    font-weight:bold;
+    color:white;
+    height:100%;
+    width:100%;
+    background:var(--blue-highlight-transparent-light);
+
+    display:block;
+}
 .contact-links{
     display:flex;
     flex-wrap:wrap;
